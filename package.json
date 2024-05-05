@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
+    "dev": "wrangler dev --test-scheduled",
     "start": "wrangler dev",
     "cf-typegen": "wrangler types"
   },
@@ -12,5 +12,8 @@
     "@cloudflare/workers-types": "^4.20240423.0",
     "typescript": "^5.0.4",
     "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0"
   }
 }
